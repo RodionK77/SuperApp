@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Добро пожаловать\nв наше многофункциональное приложение\n быстрого показа новостей"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#142850">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Здесь отобразится погода"
+        android:gravity="center"
+        android:textColor="#0C7B93"
+        android:textSize="16dp">
+    </TextView>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получить последнюю сводку игровых новостей"
+        android:textColor="#FF847B"
+        android:textSize="18dp"
+        android:onClick="onGames">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получить последнюю сводку новостей железа"
+        android:textColor="#FF847B"
+        android:textSize="18dp"
+        android:onClick="onComponents">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получить последнюю сводку новостей аудио-техники"
+        android:textColor="#FF847B"
+        android:textSize="18dp"
+        android:onClick="onAudio">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Разработчики:">
+    </TextView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_qr1"
+            android:layout_marginEnd="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/qr_rodion">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_qr2"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/qr_rodion">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_qr3"
+            android:layout_marginStart="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/qr_rodion">
+        </ImageView>
+
+    </LinearLayout>
+</LinearLayout>
