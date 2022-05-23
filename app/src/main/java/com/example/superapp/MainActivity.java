@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         iv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/k_rodion77"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/a.aaura"));
                 startActivity(browserIntent);
             }
         });
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         iv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/k_rodion77"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/id210928139"));
                 startActivity(browserIntent);
             }
         });

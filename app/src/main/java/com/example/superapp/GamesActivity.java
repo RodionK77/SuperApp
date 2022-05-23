@@ -70,9 +70,13 @@ public class GamesActivity extends AppCompatActivity {
         Elements titles = doc.getElementsByAttributeValue("itemprop", "url");
         Elements dates = doc.getElementsByClass("date");
         Elements desc = doc.getElementsByAttributeValue("itemprop", "description");
-        Elements images = doc.getElementsByClass("j3deSFAjz0 j3deSFAjz0");
+        Elements images = doc.getElementsByAttributeValue("loading", "lazy");;//doc.getElementsByClass("j3deSFAjz0 j3deSFAjz0");
+        /*System.out.println(titles.get(0).attr("title"));
+        System.out.println(dates.get(0).text());
+        System.out.println(desc.get(0).text());
+        System.out.println(images.get(0).absUrl("src"));//.child(0).absUrl("src"));*/
         for(int i = 0; i < titles.size();i++){
-            GameCard game = new GameCard(titles.get(i).attr("title"), desc.get(i).text(), dates.get(i).text(), images.get(i).child(0).absUrl("src"));
+            GameCard game = new GameCard(titles.get(i).attr("title"), desc.get(i).text(), dates.get(i).text(), images.get(i).absUrl("src"));
             list.add(game);
         }
         runOnUiThread(new Runnable() {
@@ -81,9 +85,5 @@ public class GamesActivity extends AppCompatActivity {
                 recycleAdapter.notifyDataSetChanged();
             }
         });
-        /*System.out.println(titles.get(0).attr("title"));
-        System.out.println(dates.get(0).text());
-        System.out.println(desc.get(0).text());
-        System.out.println(images.get(0).child(0).absUrl("src"));*/
     }
 }
