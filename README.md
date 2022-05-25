@@ -5,3 +5,6 @@
 * Главный экран
 ![screen1](https://user-images.githubusercontent.com/52739604/170308205-d5cc51b4-40ec-4004-8c48-ce052625cc3b.png)
 * Экран новостей
+![screen2](https://user-images.githubusercontent.com/52739604/170308582-cc4cfeb1-4ece-4461-8976-64bc46cafe7e.png)
+
+Также, на всякий случай, для удобства пользователя, приложение показывает курс валют.
