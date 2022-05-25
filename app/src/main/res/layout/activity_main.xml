@@ -12,8 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Добро пожаловать\nв многофункциональное приложение\n быстрого показа новостей"
+        android:text="Добро пожаловать\nв наше приложение\n быстрого показа новостей"
         android:textSize="22dp"
+        android:fontFamily="@font/roboto_medium"
         android:textStyle="bold"
         android:textColor="#142850">
     </TextView>
@@ -22,37 +23,52 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Здесь отобразится погода"
+        android:text="Здесь отоброзятся курсы валют"
+        android:fontFamily="@font/roboto_light"
         android:gravity="center"
-        android:textColor="#0C7B93"
+        android:textColor="#142850"
         android:textSize="16dp">
     </TextView>
 
     <Button
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Получить последнюю сводку игровых новостей"
-        android:textColor="#FF847B"
-        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Получить последнюю сводку\n игровых новостей"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:backgroundTintMode="screen"
+        android:background="@drawable/gradient"
         android:onClick="onGames">
     </Button>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Получить последнюю сводку новостей железа"
-        android:textColor="#FF847B"
-        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Получить последнюю сводку\n новостей железа"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:backgroundTintMode="screen"
+        android:background="@drawable/gradient"
         android:onClick="onComponents">
     </Button>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Получить последнюю сводку новостей аудио-техники"
-        android:textColor="#FF847B"
-        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Получить последнюю сводку\n новостей аудио-техники"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:backgroundTintMode="screen"
+        android:background="@drawable/gradient"
         android:onClick="onAudio">
     </Button>
 
@@ -61,7 +77,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="10dp"
-        android:text="Разработчики:">
+        android:text="Разработчики:"
+        android:fontFamily="@font/roboto_italic">
     </TextView>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/drawable/gradient.xml" value="0.229" />
+        <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/drawable/gradient2.xml" value="0.229" />
         <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/activity_audio.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/activity_components.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/activity_games.xml" value="0.365625" />
-        <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/activity_main.xml" value="0.34148550724637683" />
+        <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/activity_main.xml" value="0.30662020905923343" />
         <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/activity_movies.xml" value="0.365625" />
         <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/activity_news.xml" value="0.365625" />
         <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/rv_game_card.xml" value="0.365625" />

@@ -2,6 +2,8 @@ package com.example.superapp;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,20 +25,29 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.sql.SQLOutput;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String URL = "https://api.openweathermap.org/data/2.5/weather";
+    private final String URL = "https://cbr.ru/";//"https://api.openweathermap.org/data/2.5/weather";
     private final String API_KEY = "b2066df8d7429d41fa027fb5f77d8540";
     DecimalFormat df = new DecimalFormat("#.##");
-    TextView weather;
+    TextView rates;
+    private Thread secThread;
+    private Runnable runnable;
     ImageView iv1, iv2, iv3;
+    String str_rates = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +56,13 @@ public class MainActivity extends AppCompatActivity {
         iv1 = findViewById(R.id.iv_qr1);
         iv2 = findViewById(R.id.iv_qr2);
         iv3 = findViewById(R.id.iv_qr3);
-        getWeather();
+        //getWeather();
+        getExchangeRate();
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.hide();
         }
-        weather = findViewById(R.id.tv_weather);
+        rates = findViewById(R.id.tv_weather);
 
         iv1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,7 +87,36 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void getWeather(){
+    public void getExchangeRate(){
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Parsing();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        secThread = new Thread(runnable);
+        secThread.start();
+    }
+
+    public void Parsing() throws IOException {
+        Document doc = Jsoup.connect(URL).get();
+        String usd = doc.getElementsByClass("col-md-2 col-xs-9 _dollar").next().next().text();
+        String eur = doc.getElementsByClass("col-md-2 col-xs-9 _euro").next().next().text();
+        String date = doc.getElementsByClass("col-md-2 col-xs-7").next().next().text();
+        str_rates += "Курсы валют на " + date + ":\n" + "USD: " + usd + "; EUR: " + eur;
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                rates.setText(str_rates);
+            }
+        });
+    }
+
+    /*public void getWeather(){
         String tempUrl = "";
         String city = "Moscow";
         String country = "Russia";
@@ -116,21 +157,20 @@ public class MainActivity extends AppCompatActivity {
         });
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         requestQueue.add(stringRequest);
-    }
+    }*/
 
-    public void onGames(View view){
-        Intent intent = new Intent(getApplicationContext(), GamesActivity.class);
-        startActivity(intent);
-    }
+        public void onGames (View view){
+            Intent intent = new Intent(getApplicationContext(), GamesActivity.class);
+            startActivity(intent);
+        }
 
-    public void onComponents(View view){
-        Intent intent = new Intent(getApplicationContext(), ComponentsActivity.class);
-        startActivity(intent);
-    }
+        public void onComponents (View view){
+            Intent intent = new Intent(getApplicationContext(), ComponentsActivity.class);
+            startActivity(intent);
+        }
 
-    public void onAudio(View view){
-        Intent intent = new Intent(getApplicationContext(), AudioActivity.class);
-        startActivity(intent);
-    }
-
+        public void onAudio (View view){
+            Intent intent = new Intent(getApplicationContext(), AudioActivity.class);
+            startActivity(intent);
+        }
 }

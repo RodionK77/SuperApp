@@ -15,13 +15,15 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#C8F4DE">
+        app:cardBackgroundColor="#C8F4DE"
+        android:background="@drawable/gradient2">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/gradient"
             android:orientation="vertical">
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -52,6 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Тут будет заголовок"
+                    android:fontFamily="@font/roboto_medium"
                     android:textStyle="bold"
                     android:textColor="#142850"
                     android:textSize="16dp">
@@ -63,6 +66,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Тут дата"
+                    android:fontFamily="@font/roboto_italic"
                     android:textColor="#27496D"
                     android:textSize="12dp">
                 </TextView>
@@ -79,7 +83,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:text="Тут будет описание"
-                android:textColor="#142850"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/white"
                 android:textSize="14dp">
             </TextView>
 

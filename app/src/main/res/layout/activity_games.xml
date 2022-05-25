@@ -14,8 +14,8 @@
         app:title="Игровая сводка новостей"
         android:textAlignment="center"
         android:gravity="center"
-        app:titleTextColor="#FF847B"
-        android:background="#C8F4DE">
+        app:titleTextColor="@color/white"
+        android:background="@drawable/gradient2">
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
