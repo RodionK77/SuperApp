@@ -3,5 +3,5 @@
 Лёгкое, простое, не перегруженное - всё, что надо для комфортного чтения.  
 Имеет всего два экрана:
 * Главный экран
-![Image alt](https://github.com/RodionK77/SuperApp/app/src/main/res/raw/screen1.png)
+![screen1](https://user-images.githubusercontent.com/52739604/170308205-d5cc51b4-40ec-4004-8c48-ce052625cc3b.png)
 * Экран новостей
