@@ -7,4 +7,18 @@
     <string name="button_hardware">Получить последнюю сводку\n новостей железа</string>
     <string name="button_audio">Получить последнюю сводку\n новостей аудио-техники</string>
     <string name="text_dev">Разработчики</string>
+
+    <!-- ID for activity_games -->
+    <string name="label_games">Игровая сводка новостей</string>
+
+    <!-- ID for activity_components -->
+    <string name="label_components">Сводка новостей железа</string>
+
+    <!-- ID for activity_audio -->
+    <string name="label_audio">Сводка новостей аудио-техники</string>
+
+    <!-- ID for rv_game_card-->
+    <string name="text_label">Заголовок</string>
+    <string name="text_data">Данные</string>
+    <string name="text_description">Описание</string>
 </resources>

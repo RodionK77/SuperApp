@@ -8,15 +8,14 @@
     android:gravity="center_horizontal">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/toolbar3"
-        app:title="Сводка новостей аудио-техники"
-        android:textAlignment="center"
+        android:background="@drawable/gradient2"
         android:gravity="center"
-        app:titleTextColor="@color/white"
-        android:background="@drawable/gradient2">
-    </androidx.appcompat.widget.Toolbar>
+        android:textAlignment="center"
+        app:title="@string/label_audio"
+        app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_audio"
