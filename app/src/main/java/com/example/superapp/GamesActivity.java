@@ -35,6 +35,7 @@ public class GamesActivity extends AppCompatActivity {
         init();
     }
 
+    // метод, добавляющих кнопку перехода в предыдущее явление
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId()==android.R.id.home){
@@ -43,6 +44,11 @@ public class GamesActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * Ниже начинается парсинг сайта, для получения новостей
+     * Создаётся побочный поток для работы с сетью
+     * Метод Parsing непосредственно парсит данные
+     */
     private void init(){
         gameList = (RecyclerView) findViewById(R.id.rv_games);
         list = new ArrayList<>();
@@ -65,6 +71,7 @@ public class GamesActivity extends AppCompatActivity {
         secThread.start();
     }
 
+    // непосредственно парсинг
     public void Parsing() throws IOException {
         Document doc  = Jsoup.connect(URL).get();
         Elements titles = doc.getElementsByAttributeValue("itemprop", "url");
