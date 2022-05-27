@@ -12,6 +12,15 @@
         <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/activity_movies.xml" value="0.365625" />
         <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/activity_news.xml" value="0.365625" />
         <entry key="..\:/AndroidProjects/SuperApp/app/src/main/res/layout/rv_game_card.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.339" />
+        <entry key="app/src/main/res/drawable/gradient.xml" value="0.339" />
+        <entry key="app/src/main/res/drawable/gradient2.xml" value="0.339" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.339" />
+        <entry key="app/src/main/res/layout/activity_audio.xml" value="0.2477355072463768" />
+        <entry key="app/src/main/res/layout/activity_components.xml" value="0.2477355072463768" />
+        <entry key="app/src/main/res/layout/activity_games.xml" value="0.2477355072463768" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/rv_game_card.xml" value="0.30344202898550726" />
       </map>
     </option>
   </component>

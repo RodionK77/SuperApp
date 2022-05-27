@@ -16,4 +16,26 @@
     <string name="weather_drizzle">&#xf01c;</string>
 
     <string name="place_not_found">Sorry, no weather data found.</string>
+
+    <!-- ID for activity_main -->
+    <string name="message_hello">Welcome\n to our application\n quick news display</string>
+    <string name="message_exchange_rate">The exchange rates will be displayed here</string>
+    <string name="button_games">Get the latest summary of\n gaming news</string>
+    <string name="button_hardware">Get the latest summary of \n iron news</string>
+    <string name="button_audio">Get the latest summary of \n audio engineering news</string>
+    <string name="text_dev">Devs</string>
+
+    <!-- ID for activity_games -->
+    <string name="label_games">Game News Summary</string>
+
+    <!-- ID for activity_components -->
+    <string name="label_components">Hardware News Summary</string>
+
+    <!-- ID for activity_audio -->
+    <string name="label_audio">Audio Engineering News Summary</string>
+
+    <!-- ID for rv_game_card-->
+    <string name="text_label">Label</string>
+    <string name="text_data">Data</string>
+    <string name="text_description">Description</string>
 </resources>

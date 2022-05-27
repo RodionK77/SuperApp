@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ID for activity_main -->
+    <string name="message_hello">Добро пожаловать\nв наше приложение\n быстрого показа новостей</string>
+    <string name="message_exchange_rate">Здесь отоброзятся курсы валют</string>
+    <string name="button_games">Получить последнюю сводку\n игровых новостей</string>
+    <string name="button_hardware">Получить последнюю сводку\n новостей железа</string>
+    <string name="button_audio">Получить последнюю сводку\n новостей аудио-техники</string>
+    <string name="text_dev">Разработчики</string>
+
+    <!-- ID for activity_games -->
+    <string name="label_games">Игровая сводка новостей</string>
+
+    <!-- ID for activity_components -->
+    <string name="label_components">Сводка новостей железа</string>
+
+    <!-- ID for activity_audio -->
+    <string name="label_audio">Сводка новостей аудио-техники</string>
+
+    <!-- ID for rv_game_card-->
+    <string name="text_label">Заголовок</string>
+    <string name="text_data">Данные</string>
+    <string name="text_description">Описание</string>
+</resources>
